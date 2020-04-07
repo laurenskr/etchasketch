@@ -1,1 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100vh;
+}
+#container {
+    height: 960px;
+    width: 960px;
+    background: #eee;
+    display: flex;
+    margin-left: 25vw;
+    flex-wrap: wrap;
+    /* margin-right: 2vw; */
+}
+div {
+    border: 1px solid black;    
+    margin: 0;
+    width: 25%;
 
+}
+p {
+    color: blue;
+}
