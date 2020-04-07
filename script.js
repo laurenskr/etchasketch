@@ -1,6 +1,7 @@
 let gridSize = 4
 makeGrid(gridSize)
 hoverColor()
+color = "blue";
 //grid maken 
 function makeGrid(gridSize) {
     for (i=0; i < gridSize**2; i++) {
@@ -18,7 +19,7 @@ function hoverColor() {
     cells = document.querySelectorAll('.cell');
     cells.forEach((cell) => {
     cell.addEventListener('mouseenter', (e) => {
-        cell.style.backgroundColor = 'blue';
+        cell.style.backgroundColor = "blue";
     })
 });
 }
@@ -34,4 +35,17 @@ function resetCells() {
 
     makeGrid(gridSize);
     hoverColor();
+}
+function setToRandom() {
+    color = randomColor();
+    cells = document.querySelectorAll('.cell');
+    cells.forEach((cell) => {
+    cell.addEventListener('mouseenter', (e) => {
+        cell.style.backgroundColor = randomColor();
+    })
+});
+}
+function setToBlue() {
+    let color = "blue";
+    return color; 
 }

@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button onclick=resetCells()>Reset</button>
+    <div class="controls">
+        <button onclick=setToBlue()>Blue</button>
+        <button style="background-color: red; color: white;"onclick=resetCells()>Reset</button>
+        <button onclick=setToRandom()>Random</button>
+    </div>
     <div id="container"></div>
     
     <script src="script.js"></script>
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.4/randomColor.js"></script>
 </body>
 </html>
