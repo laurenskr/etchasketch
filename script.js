@@ -9,7 +9,7 @@ function makeGrid(gridSize) {
     const cell = document.createElement('div');
     cell.classList.add('cell');
     cell.textContent = '';
-    
+    cell.style.width = `${100/gridSize}%`
     container.appendChild(cell);
     }
 }    
@@ -31,6 +31,7 @@ function resetCells() {
         container.removeChild(cell);
     })
     gridSize = prompt("How big should one side of the square be?")
+
     makeGrid(gridSize);
     hoverColor();
 }
